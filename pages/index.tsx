@@ -1,7 +1,7 @@
 import { ModeToggle } from '@/components/toggle-mode'
 import { Input } from '@/components/ui/input'
-import { Button } from "@/components/ui/button"
 import Image from 'next/image'
+import Link from 'next/link'
 import image1 from '@/public/family.jpg'
 import {
   Card,
@@ -23,9 +23,10 @@ function Dashboard() {
       </div>
 
     </nav>
-    <div className="flex justify-between mt-8 mx-6">
-      <Card className="w-[600px] h-[500px] shadow-lg rounded-lg">
-      <div className="relative h-[90%] w-[100%]">
+    <div className="flex flex-wrap justify-between mt-8 mx-6">
+    <Link href="/gallery">
+        <Card className="w-[600px] h-[400px] shadow-lg rounded-lg mb-4">
+          <div className="relative h-[90%] w-[100%]">
             <Image
               src={image1}
               alt="Image 1"
@@ -34,40 +35,98 @@ function Dashboard() {
               className="shadow-lg"
             />
           </div>
-          <div className="flex flex-col h-[10%] justify-end ">
-            <CardTitle className=" flex justify-center text-xl mb-2">Family 1</CardTitle>
+          <div className="flex flex-col h-[10%] justify-end">
+            <CardTitle className="flex justify-center text-xl mb-2">Family 1</CardTitle>
           </div>
-      </Card>
+        </Card>
+        </Link>
 
-      <Card className="w-[600px] h-[500px] shadow-lg rounded-lg">
-      <div className="relative h-[90%] w-[100%]">
+        <Link href="/gallery">
+        <Card className="w-[600px] h-[400px] shadow-lg rounded-lg mb-4">
+          <div className="relative h-[90%] w-[100%]">
             <Image
               src={image1}
               alt="Image 1"
               layout="fill"
-              objectFit="contain"
+              objectFit="cover"
               className="shadow-lg"
             />
           </div>
-          <div className="flex flex-col h-[10%] justify-end ">
-            <CardTitle className=" flex justify-center text-xl mb-2">Family 2</CardTitle>
+          <div className="flex flex-col h-[10%] justify-end">
+            <CardTitle className="flex justify-center text-xl mb-2">Family 1</CardTitle>
           </div>
-      </Card>
-      <Card className="w-[600px] h-[500px] shadow-lg rounded-lg">
-      <div className="relative h-[90%] w-[100%]">
+        </Card>
+        </Link>
+
+        <Link href="/gallery">
+        <Card className="w-[600px] h-[400px] shadow-lg rounded-lg mb-4">
+          <div className="relative h-[90%] w-[100%]">
             <Image
               src={image1}
               alt="Image 1"
               layout="fill"
-              objectFit="contain"
+              objectFit="cover"
               className="shadow-lg"
             />
           </div>
-          <div className="flex flex-col h-[10%] justify-end ">
-            <CardTitle className=" flex justify-center text-xl mb-2">Family 3</CardTitle>
+          <div className="flex flex-col h-[10%] justify-end">
+            <CardTitle className="flex justify-center text-xl mb-2">Family 1</CardTitle>
           </div>
-      </Card>
-    </div>
+        </Card>
+        </Link>
+
+        {/* // 2nd row */}
+        <Link href="/gallery">
+        <Card className="w-[600px] h-[400px] shadow-lg rounded-lg mb-4">
+          <div className="relative h-[90%] w-[100%]">
+            <Image
+              src={image1}
+              alt="Image 1"
+              layout="fill"
+              objectFit="cover"
+              className="shadow-lg"
+            />
+          </div>
+          <div className="flex flex-col h-[10%] justify-end">
+            <CardTitle className="flex justify-center text-xl mb-2">Family 1</CardTitle>
+          </div>
+        </Card>
+        </Link>
+
+        <Link href="/gallery">
+        <Card className="w-[600px] h-[400px] shadow-lg rounded-lg mb-4">
+          <div className="relative h-[90%] w-[100%]">
+            <Image
+              src={image1}
+              alt="Image 1"
+              layout="fill"
+              objectFit="cover"
+              className="shadow-lg"
+            />
+          </div>
+          <div className="flex flex-col h-[10%] justify-end">
+            <CardTitle className="flex justify-center text-xl mb-2">Family 1</CardTitle>
+          </div>
+        </Card>
+        </Link>
+
+        <Link href="/gallery">
+        <Card className="w-[600px] h-[400px] shadow-lg rounded-lg mb-4">
+          <div className="relative h-[90%] w-[100%]">
+            <Image
+              src={image1}
+              alt="Image 1"
+              layout="fill"
+              objectFit="cover"
+              className="shadow-lg"
+            />
+          </div>
+          <div className="flex flex-col h-[10%] justify-end">
+            <CardTitle className="flex justify-center text-xl mb-2">Family 1</CardTitle>
+          </div>
+        </Card>
+        </Link>
+      </div>
     </>
   )
 }
