@@ -2,7 +2,7 @@ import { ModeToggle } from '@/components/toggle-mode'
 import { Input } from '@/components/ui/input'
 import Image from 'next/image'
 import Link from 'next/link'
-import image1 from '@/public/family.jpg'
+import image1 from '@/public/fam.jpg'
 import {
   Card,
   CardTitle,
@@ -53,7 +53,7 @@ function Dashboard() {
             />
           </div>
           <div className="flex flex-col h-[10%] justify-end">
-            <CardTitle className="flex justify-center text-xl mb-2">Family 1</CardTitle>
+            <CardTitle className="flex justify-center text-xl mb-2">Family 2</CardTitle>
           </div>
         </Card>
         </Link>
@@ -70,7 +70,7 @@ function Dashboard() {
             />
           </div>
           <div className="flex flex-col h-[10%] justify-end">
-            <CardTitle className="flex justify-center text-xl mb-2">Family 1</CardTitle>
+            <CardTitle className="flex justify-center text-xl mb-2">Family 3</CardTitle>
           </div>
         </Card>
         </Link>
@@ -88,7 +88,7 @@ function Dashboard() {
             />
           </div>
           <div className="flex flex-col h-[10%] justify-end">
-            <CardTitle className="flex justify-center text-xl mb-2">Family 1</CardTitle>
+            <CardTitle className="flex justify-center text-xl mb-2">Family 4</CardTitle>
           </div>
         </Card>
         </Link>
@@ -105,7 +105,7 @@ function Dashboard() {
             />
           </div>
           <div className="flex flex-col h-[10%] justify-end">
-            <CardTitle className="flex justify-center text-xl mb-2">Family 1</CardTitle>
+            <CardTitle className="flex justify-center text-xl mb-2">Family 5</CardTitle>
           </div>
         </Card>
         </Link>
@@ -122,7 +122,7 @@ function Dashboard() {
             />
           </div>
           <div className="flex flex-col h-[10%] justify-end">
-            <CardTitle className="flex justify-center text-xl mb-2">Family 1</CardTitle>
+            <CardTitle className="flex justify-center text-xl mb-2">Family 6</CardTitle>
           </div>
         </Card>
         </Link>
