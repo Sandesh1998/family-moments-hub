@@ -6,7 +6,7 @@ function Gallery() {
   return (
     <>
       <div className="grid w-full lg:max-w-sm items-center gap-1.5">
-      <Label htmlFor="picture">Picture</Label>
+      <Label htmlFor="picture">Picture of the day</Label>
       <Input
         id="picture"
         type="file"
