@@ -77,7 +77,7 @@ function Gallery() {
  {images.map((image) => (
  <div key={image._id}>
  {image.images.map((img) => (
- <img src={ `${img.path}`} key={img._id} alt={img.filename} className="object-contain w-[500px] h-[250px]" />
+ <img src={ `${img.path}`} key={img._id} alt={img.filename} className="object-contain w-[500px] h-[210px]" />
  ))}
  </div>
  ))}
